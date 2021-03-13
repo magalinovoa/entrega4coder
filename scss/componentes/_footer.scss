@@ -1,0 +1,29 @@
+footer {
+  padding: 2%;
+  background-color: $violeta-oscuro;
+  color: white;
+  text-align: center;
+
+  section {
+    display: flex;
+    justify-content: center;
+    background-color: $violeta-oscuro;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 0 5%;
+      display: block;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+
+      &:hover {
+        color: #f7dfe9;
+        transform: scale(1.2);
+        transition: all 1s;
+      }
+    }
+  }
+}

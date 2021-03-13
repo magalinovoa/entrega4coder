@@ -1,0 +1,74 @@
+@media only screen and (max-width: 400px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .mobile-navbar {
+    display: unset;
+    width: 100%;
+    background-color: $rosa-oscuro;
+    @include box(0, 0);
+  }
+
+  .bg-light {
+    background-color: $rosa-oscuro !important;
+  }
+
+  header {
+    display: none;
+    @include box(0, 0);
+    position: relative;
+  }
+
+  .section-contacto {
+    height: auto;
+  }
+
+  /*INICIO*/
+
+  .inicio_h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .inicio-proyectos-container {
+    margin: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .inicio_proyectos {
+    width: 90%;
+    margin: 0 5% 20% 5%;
+  }
+
+  .proyectos-boton {
+    width: 50%;
+  }
+
+  .inicio-hero {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+
+    h2 {
+      line-height: 1.5;
+      @include box(0, 0 0 100px 0);
+    }
+  }
+}

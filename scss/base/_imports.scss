@@ -1,0 +1,14 @@
+/*Componentes*/
+@import "../componentes/header";
+@import "../componentes/footer";
+@import "../componentes/extend";
+@import "../componentes/mixin";
+@import "../componentes/section-contacto";
+@import "../componentes/bootstrap";
+
+/*Base*/
+@import "../base/variables";
+
+/*Media Query*/
+@import "../mediaquery/mobile";
+@import "../mediaquery/tablet";

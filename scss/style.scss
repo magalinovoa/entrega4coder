@@ -1,0 +1,98 @@
+@import "../scss/base/imports";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*1. INICIO/INDEX*/
+
+.inicio-hero {
+  height: 500px;
+  background-color: $rosa-oscuro;
+  text-align: center;
+  @include box(0px, 200px 50px 50px 50px);
+
+  h2 {
+    margin-top: 50px;
+    text-transform: none;
+    animation: fadeIn ease 5s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.inicio_h3 {
+  @include box(0, 20px 0);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.proyectos-titulo {
+  margin: 5% 0 2% 0;
+}
+
+.inicio-proyectos-container {
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.inicio_proyectos {
+  text-align: center;
+  width: 60%;
+  margin: 0 20% 10% 20%;
+  align-items: center;
+
+  img {
+    width: 30%;
+    margin: 0 0 5% 0;
+  }
+}
+
+.proyectos-boton {
+  @extend %botones-proyecto;
+}
+
+.inicio_sobre-mi_2 {
+  button {
+    width: 50%;
+    margin: 2% 0;
+    padding: 2%;
+    border: 0px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 5% 25%;
+    transition: all 1s;
+
+    &:hover {
+      font-weight: 600;
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+  }
+}
+
+/*Esto tuve que ponerlo acá, porque sino la configuración de desktop me lo sobreescribia*/
+@media only screen and (max-width: 400px) {
+  .inicio-hero {
+    width: 100%;
+    @include box(0, 20% 5%);
+    height: unset;
+
+    h2 {
+      line-height: 1.5;
+      @include box(0, 0 0 100px 0);
+    }
+  }
+}

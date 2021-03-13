@@ -1,0 +1,17 @@
+%botones-proyecto {
+  border-bottom: 1px solid black;
+  width: 30%;
+  padding: 3% 0 2% 0;
+  margin: auto;
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  a {
+    color: $color-texto;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}

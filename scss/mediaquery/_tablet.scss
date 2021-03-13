@@ -1,0 +1,102 @@
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  *,
+  ::after,
+  ::before {
+    box-sizing: unset;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  section {
+    margin: 10px 0px;
+    padding: 0;
+  }
+
+  .section-one {
+    padding-top: 5%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .section-contacto {
+    height: auto;
+    margin: 0;
+  }
+
+  footer {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .mobile-navbar {
+    display: unset;
+    width: 100%;
+    background-color: #efd3d7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg-light {
+    background-color: #efd3d7 !important;
+  }
+
+  header {
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  header h1 {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-header a {
+    display: block;
+  }
+
+  /*INICIO*/
+
+  .inicio_h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .inicio-proyectos-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .inicio_proyectos {
+    width: 90%;
+    margin: 0 5%;
+    padding: 10% 0%;
+  }
+
+  .inicio-imagenes-proyectos {
+    width: 50%;
+    height: 50%;
+  }
+
+  .inicio-hero {
+    width: 90%;
+    padding: 20% 5%;
+    height: unset;
+  }
+}

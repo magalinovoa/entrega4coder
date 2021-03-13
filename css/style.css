@@ -1,0 +1,387 @@
+@charset "UTF-8";
+/*Componentes*/
+.mobile-navbar {
+  display: none;
+}
+
+header {
+  background-color: #efd3d7;
+  padding: 15px 50px 15px 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  font-size: 25px;
+  text-align: left;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 150px;
+}
+
+.nav-header {
+  text-align: right;
+  word-spacing: 15px;
+  display: inline;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-header a {
+  display: block;
+  text-decoration: none;
+  color: #212121;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  padding: 0 3%;
+}
+.nav-header a:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.sobre-mi {
+  word-spacing: 0px;
+}
+
+footer {
+  padding: 2%;
+  background-color: #8e9aaf;
+  color: white;
+  text-align: center;
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  background-color: #8e9aaf;
+}
+footer section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 5%;
+  display: block;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+footer section a:hover {
+  color: #f7dfe9;
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.proyectos-boton {
+  border-bottom: 1px solid black;
+  width: 30%;
+  padding: 3% 0 2% 0;
+  margin: auto;
+  transition: all 1s;
+}
+.proyectos-boton:hover {
+  transform: scale(0.9);
+}
+.proyectos-boton a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-contacto {
+  background: linear-gradient(180deg, white, #bcb7ca 80%, #adadc1);
+  height: 400px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+.section-contacto div {
+  margin: 7% 0 0 0;
+  text-align: center;
+}
+.section-contacto div h3 {
+  padding: 2% 0;
+}
+.section-contacto div p {
+  padding: 2% 0;
+}
+.section-contacto div p a {
+  font-weight: bold;
+  color: #212121;
+  text-decoration: none;
+  transition: all 1s;
+}
+.section-contacto div p a:hover {
+  color: #757575;
+}
+
+/*Base*/
+/*Media Query*/
+@media only screen and (max-width: 400px) {
+  *,
+::after,
+::before {
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .mobile-navbar {
+    display: unset;
+    width: 100%;
+    background-color: #efd3d7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg-light {
+    background-color: #efd3d7 !important;
+  }
+
+  header {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .section-contacto {
+    height: auto;
+  }
+
+  /*INICIO*/
+  .inicio_h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .inicio-proyectos-container {
+    margin: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .inicio_proyectos {
+    width: 90%;
+    margin: 0 5% 20% 5%;
+  }
+
+  .proyectos-boton {
+    width: 50%;
+  }
+
+  .inicio-hero {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+  }
+  .inicio-hero h2 {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 100px 0;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  *,
+::after,
+::before {
+    box-sizing: unset;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  section {
+    margin: 10px 0px;
+    padding: 0;
+  }
+
+  .section-one {
+    padding-top: 5%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .section-contacto {
+    height: auto;
+    margin: 0;
+  }
+
+  footer {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .mobile-navbar {
+    display: unset;
+    width: 100%;
+    background-color: #efd3d7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg-light {
+    background-color: #efd3d7 !important;
+  }
+
+  header {
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  header h1 {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-header a {
+    display: block;
+  }
+
+  /*INICIO*/
+  .inicio_h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .inicio-proyectos-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .inicio_proyectos {
+    width: 90%;
+    margin: 0 5%;
+    padding: 10% 0%;
+  }
+
+  .inicio-imagenes-proyectos {
+    width: 50%;
+    height: 50%;
+  }
+
+  .inicio-hero {
+    width: 90%;
+    padding: 20% 5%;
+    height: unset;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*1. INICIO/INDEX*/
+.inicio-hero {
+  height: 500px;
+  background-color: #efd3d7;
+  text-align: center;
+  margin: 0px;
+  padding: 200px 50px 50px 50px;
+}
+.inicio-hero h2 {
+  margin-top: 50px;
+  text-transform: none;
+  animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.inicio_h3 {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.proyectos-titulo {
+  margin: 5% 0 2% 0;
+}
+
+.inicio-proyectos-container {
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.inicio_proyectos {
+  text-align: center;
+  width: 60%;
+  margin: 0 20% 10% 20%;
+  align-items: center;
+}
+.inicio_proyectos img {
+  width: 30%;
+  margin: 0 0 5% 0;
+}
+
+.inicio_sobre-mi_2 button {
+  width: 50%;
+  margin: 2% 0;
+  padding: 2%;
+  border: 0px;
+  border-radius: 50px;
+  background-color: #fff;
+  margin: 5% 25%;
+  transition: all 1s;
+}
+.inicio_sobre-mi_2 button:hover {
+  font-weight: 600;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+/*Esto tuve que ponerlo acá, porque sino la configuración de desktop me lo sobreescribia*/
+@media only screen and (max-width: 400px) {
+  .inicio-hero {
+    width: 100%;
+    margin: 0;
+    padding: 20% 5%;
+    height: unset;
+  }
+  .inicio-hero h2 {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 100px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

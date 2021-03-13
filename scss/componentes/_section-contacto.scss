@@ -1,0 +1,31 @@
+.section-contacto {
+  background: linear-gradient(180deg, white, #bcb7ca 80%, #adadc1);
+  height: 400px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+
+  div {
+    margin: 7% 0 0 0;
+    text-align: center;
+
+    h3 {
+      padding: 2% 0;
+    }
+
+    p {
+      padding: 2% 0;
+
+      a {
+        font-weight: bold;
+        color: $color-texto;
+        text-decoration: none;
+        transition: all 1s;
+
+        &:hover {
+          color: #757575;
+        }
+      }
+    }
+  }
+}
